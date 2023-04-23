@@ -1,0 +1,22 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "\"# cypress-ramp-up\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://SaraKSPS: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@github.com/SaraKSPS/cypress-ramp-up.git"
+  },
+  "author": "SaraKSPS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaraKSPS/cypress-ramp-up/issues"
+  },
+  "homepage": "https://github.com/SaraKSPS/cypress-ramp-up#readme",
+  "devDependencies": {
+    "cypress": "12.1.0"
+  }
+}
