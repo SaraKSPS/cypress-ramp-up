@@ -14,6 +14,10 @@ class InventoryPage {
     openCart() {
         cy.get(elements.botaoOpenCart).click()
     }
+    verificarBtnsBackpackJacket() {
+        cy.get(elements.adicionarBackpack).should('exist')
+        cy.get(elements.adicionarJacket).should('exist')
+    }
 }
 
 export default new InventoryPage();

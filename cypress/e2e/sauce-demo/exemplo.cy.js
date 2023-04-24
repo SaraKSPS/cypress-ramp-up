@@ -20,5 +20,19 @@ describe("Exemplo com SauceDemo", () => {
         checkoutFinalPage.verificarTextoOrder();
 
     })
+    it("Verificar usuário bloqueado", () => {
+        loginPage.login('locked_out_user', 'secret_sauce');
+        loginPage.verificarBlockedUser();
+
+    })
+    it("Remover itens do carrinho", () =>{
+        loginPage.login('standard_user', 'secret_sauce');
+        inventoryPage.addProducts();
+        inventoryPage.openCart();
+        cartPage.removeItens();
+        cartPage.retornarInventoryPage();
+        inventoryPage.verificarBtnsBackpackJacket();
+
+    })
 
 })
